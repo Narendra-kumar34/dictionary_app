@@ -18,7 +18,7 @@ function App() {
   const [meaning, setMeaning] = useState("");
 
   const handleSearch = () => {
-    const res = dictionary.find((obj) => obj.word.toLowerCase() === text);
+    const res = dictionary.find((obj) => obj.word.toLowerCase() === text.toLowerCase());
     if (res) {
       setMeaning(res.meaning);
     } else {
