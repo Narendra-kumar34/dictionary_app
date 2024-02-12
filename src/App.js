@@ -40,7 +40,7 @@ function App() {
       />
       <button onClick={handleSearch}>Search</button>
       <h3>Definition:</h3>
-      {text && search && <div>{meaning}</div>}
+      {search && <div>{meaning}</div>}
     </div>
   );
 }
